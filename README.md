@@ -1,41 +1,51 @@
 # ⚔️ Attack on Titan – Interactive Cinematic Storytelling
 
-An immersive, scroll-driven storytelling experience inspired by **Attack on Titan**, built using **HTML, CSS, and JavaScript**. The project recreates a cinematic narrative where users reveal the story through scrolling, accompanied by animated image sequences, smooth transitions, and atmospheric background music.
+An immersive, scroll-driven storytelling experience inspired by **Attack on Titan**, built entirely with **Vanilla HTML, CSS, and JavaScript**.
 
-> *"If you win, you live. If you lose, you die. If you don't fight, you can't win."* — **Eren Yeager**
+This project transforms a traditional webpage into a cinematic journey where every scroll advances the story through animated image sequences, smooth transitions, atmospheric visuals, and ambient background music.
 
+> *"If you win, you live. If you lose, you die. If you don't fight, you can't win."*  
+> — **Eren Yeager**
 
 ---
 
 ## ✨ Features
 
 - 🎬 Scroll-controlled cinematic image sequence animation
-- 🎨 Fullscreen HTML5 Canvas rendering
-- 📖 Interactive storytelling layout
-- ✨ Smooth fade-in animations using Intersection Observer
-- 🎵 Optional ambient background music with mute/unmute control
-- 🌑 Dark cinematic Attack on Titan inspired theme
-- 📱 Responsive design for desktop and mobile
-- 🖱️ Sticky hero section with immersive scrolling experience
-- 🎭 Elegant typography using Google Fonts
+- 🖼️ HTML5 Canvas rendering for smooth frame playback
+- 📖 Interactive storytelling experience
+- ✨ Smooth fade-in content animations
+- 🎵 Ambient background music with mute/unmute control
+- 🌑 Dark cinematic UI inspired by Attack on Titan
+- 📱 Fully responsive design
+- 🎨 Elegant typography using Google Fonts
+- 🖱️ Sticky hero section with immersive scrolling
 
 ---
 
-## 🛠️ Built With
+## 🛠️ Tech Stack
 
-- HTML5
-- CSS3
-- JavaScript (ES6)
-- HTML5 Canvas API
-- Intersection Observer API
-- Google Fonts
+- **HTML5**
+- **CSS3**
+- **Vanilla JavaScript (ES6)**
+
+### Browser Features Used
+
+- HTML5 Canvas
+- HTML5 Audio
+- Intersection Observer
+- CSS Variables
+- Flexbox
+- Sticky Positioning
+- CSS Animations & Transitions
+- Media Queries
 
 ---
 
 ## 📂 Project Structure
 
 ```
-Attack-On-Titan-Story/
+Attack-On-Titan-Interactive-Story/
 │
 ├── index.html
 ├── style.css
@@ -58,68 +68,53 @@ Attack-On-Titan-Story/
 
 ## 🚀 Getting Started
 
-### Clone the repository
+### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/your-username/Attack-On-Titan-Story.git
+git clone https://github.com/your-username/Attack-On-Titan-Interactive-Story.git
 ```
 
-### Navigate into the project
+### 2. Navigate into the Project
 
 ```bash
-cd Attack-On-Titan-Story
+cd Attack-On-Titan-Interactive-Story
 ```
 
-### Run the project
+### 3. Run the Project
 
-Simply open **index.html** in your browser.
+Open `index.html` in your browser.
 
 For the best experience, use **Live Server** in Visual Studio Code.
 
 ---
 
-## 🎥 Image Sequence
+## 🎬 How It Works
 
-The cinematic intro uses **50 extracted image frames** stored inside:
+### Scroll Animation
 
-```
-AOT_VIDEO/
-```
+The hero section uses an image sequence consisting of **50 extracted frames**.
 
-Images follow the naming convention:
+As the user scrolls, JavaScript calculates the scroll progress and renders the corresponding frame onto an HTML5 Canvas, creating a smooth cinematic animation.
 
-```
-ezgif-frame-001.jpg
-ezgif-frame-002.jpg
-...
-ezgif-frame-050.jpg
-```
+### Story Reveal
 
-The JavaScript preloads all frames and renders them onto an HTML5 canvas based on the user's scroll position.
+Each story section fades into view using the **Intersection Observer**, providing a seamless reading experience.
+
+### Background Music
+
+A built-in audio player allows users to enable or disable ambient orchestral music without interrupting the experience.
 
 ---
 
-## 🎵 Background Audio
+## 🎨 Design Highlights
 
-The project includes ambient orchestral background music.
-
-Features:
-
-- Loop playback
-- Mute / Unmute button
-- Low-volume cinematic ambience
-- Browser autoplay restrictions handled gracefully
-
----
-
-## 🎨 Color Palette
-
-| Color | Hex |
-|--------|------|
-| Background | `#030303` |
-| Primary Text | `#EDEDED` |
-| Accent Red | `#9E0B0F` |
-| Glow Red | `#FF1A1A` |
+- Minimal cinematic aesthetic
+- Dark monochrome theme with crimson accents
+- Large cinematic typography
+- Smooth scrolling interactions
+- Responsive layouts
+- Subtle vignette and lighting effects
+- Elegant content reveal animations
 
 ---
 
@@ -127,81 +122,50 @@ Features:
 
 The website is optimized for:
 
-- Desktop
-- Tablets
-- Mobile devices
+- 💻 Desktop
+- 📱 Mobile
+- 📟 Tablets
 
-Responsive typography is achieved using:
-
-```css
-clamp()
-```
-
-along with flexible layouts and media queries.
+Responsive typography is implemented using CSS `clamp()` and flexible layouts powered by Flexbox.
 
 ---
 
-## ⚡ Technologies Used
+## 📁 Assets
 
-### HTML
+This project includes:
 
-- Semantic structure
-- Audio API
-- Canvas element
-
-### CSS
-
-- CSS Variables
-- Flexbox
-- Sticky positioning
-- Animations
-- Gradients
-- Responsive typography
-- Custom scrollbar
-- Glassmorphism effects
-
-### JavaScript
-
-- Canvas rendering
-- Image preloading
-- Scroll-based animation
-- Intersection Observer
-- Event listeners
-- Audio controls
-- Responsive canvas resizing
+- Extracted image sequence (`AOT_VIDEO/`)
+- Royalty-free orchestral background music
+- Google Fonts (`Cinzel` & `Inter`)
 
 ---
 
 ## 💡 Inspiration
 
-This project is inspired by the storytelling style of modern interactive websites and the emotional narrative of **Attack on Titan**.
+Inspired by the storytelling techniques of modern interactive websites, this project recreates the emotional atmosphere of **Attack on Titan** through web technologies.
 
-The goal was to create an engaging, cinematic web experience where scrolling becomes part of the story.
+Rather than presenting information traditionally, the story unfolds naturally as the user scrolls, creating a cinematic experience.
 
 ---
 
-## 📈 Future Improvements
+## 🔮 Future Improvements
 
-- 🎞️ Higher frame-count animations
-- 🌫️ Particle and smoke effects
-- ⚔️ 3D ODM Gear animation
-- 🔥 Dynamic lighting effects
-- 🎧 Multiple soundtrack options
-- 🌍 Full story timeline
-- 📖 Character profiles
-- 🎬 Scene transitions
-- 🩸 Blood and dust visual effects
-- WebGL / Three.js enhancements
+- Higher frame-count animations
+- Particle effects (dust, smoke, embers)
+- Character introduction scenes
+- Sound effects synchronized with scrolling
+- Dynamic lighting and color grading
+- Three.js/WebGL version
+- Accessibility improvements
+- Loading screen with progress indicator
 
 ---
 
 ## ⚠️ Disclaimer
 
-This project is a **fan-made, non-commercial** web experience inspired by **Attack on Titan**.
+This is a **fan-made, non-commercial project** created for educational and portfolio purposes.
 
-Attack on Titan, its characters, artwork, and related intellectual property belong to their respective copyright holders.
-
-This repository is intended solely for educational and portfolio purposes.
+Attack on Titan and all related characters, names, and intellectual property belong to their respective copyright holders.
 
 ---
 
@@ -209,25 +173,25 @@ This repository is intended solely for educational and portfolio purposes.
 
 Contributions are welcome!
 
-If you'd like to improve animations, optimize performance, or add new cinematic effects:
+If you have ideas to improve animations, optimize performance, or enhance the storytelling experience:
 
 1. Fork the repository
-2. Create a feature branch
+2. Create a new feature branch
 3. Commit your changes
 4. Open a Pull Request
 
 ---
 
-## ⭐ Show Your Support
+## ⭐ Support
 
-If you enjoyed this project, consider giving it a ⭐ on GitHub.
+If you enjoyed this project, consider giving it a **⭐ Star** on GitHub.
 
 It helps others discover the project and motivates future improvements.
 
 ---
 
-## 📜 License
+## 📄 License
 
 This project is licensed under the **MIT License**.
 
-See the `LICENSE` file for more information.
+Feel free to use this project for learning and personal development.
